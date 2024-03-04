@@ -1,0 +1,172 @@
+* {
+    margin: o;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(0, 0%, 81%);
+    padding: 4rem;
+}
+
+.general-container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 13px;
+}
+
+/* This container has grid-template-rows property by default */
+.grid-container {
+    display: grid;
+    gap: 1rem;
+}
+
+/* These containers are flexed within grid container */
+.grid-container1, .grid-container2 {
+    display: flex;
+    gap: 1rem;
+}
+
+/* These are the containers of Daniel and Jonathan's testimonials, they are flexed within the
+grid container1 */
+.grid-item1 {
+    background-image: url(bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 80% top;
+    background-size: 5rem;
+    background-color: hsl(263, 55%, 52%);
+    width: 28rem;
+    height: 16rem;
+    padding: 1rem 1rem;
+}
+
+.grid-item2 {
+    background-color: hsl(217, 19%, 35%);
+    padding: 1rem 1rem 0.5rem;
+    width: 14rem;
+    height: 16rem;
+}
+
+/* grid-items 3 and 4 are flexed within grid-container2 */
+.grid-item3 {
+    background-color: white;
+    width: 14rem;
+    height: 16rem;
+    padding: 1rem;
+}
+
+.grid-item4 {
+    background-color: hsl(219, 29%, 14%);
+    width: 28rem;
+    height: 16rem;
+    padding: 1rem;
+}
+
+/* The container of Kira's testimonial is not in the grid box but it is flexed 
+in the general container */
+.grid-item5 {
+    background-color: white;
+    width: 14rem;
+    padding: 1rem;
+}
+
+.gridItem {
+    border-radius: 8px;
+}
+
+.identifier {
+    display: flex;
+    align-items: center;
+}
+
+.daniel, img {
+    border-radius: 2rem;
+}
+
+.text {
+    margin-left: 1rem;
+}
+
+.caption {
+    font-weight: 600;
+}
+
+/*text color for grid-item1, 2, and 4*/
+.whiteText {
+    color: white;
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        background-color: hsl(0, 0%, 81%);
+        padding: 1rem;
+        justify-content: center;
+    }
+
+    .general-container {
+        display: block;
+        gap: 1rem;
+        justify-content: center;
+        font-family: "Barlow Semi Condensed", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        font-size: 13px;
+    }
+    
+    .grid-container {
+        display: block;
+        gap: 1rem;
+    }
+
+    .grid-container1, .grid-container2 {
+        display: block;
+        gap: 1rem;
+    }
+
+    .grid-item1 {
+        background-image: url(bg-pattern-quotation.svg);
+        background-repeat: no-repeat;
+        background-position: 80% top;
+        background-size: 5rem;
+        background-color: hsl(263, 55%, 52%);
+        width: 14rem;
+        height: fit-content;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .grid-item2 {
+        background-color: hsl(217, 19%, 35%);
+        padding: 1rem 1rem 0.5rem;
+        width: 14rem;
+        height: fit-content;
+        margin-bottom: 1rem;
+    }
+
+    .grid-item3 {
+        background-color: white;
+        width: 14rem;
+        height: fit-content;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .grid-item4 {
+        background-color: hsl(219, 29%, 14%);
+        width: 14rem;
+        height: fit-content;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .grid-item5 {
+        background-color: white;
+        width: 14rem;
+        padding: 1rem;
+        height: fit-content;
+    }
+}
